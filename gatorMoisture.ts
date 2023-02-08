@@ -194,7 +194,7 @@ namespace gatorMoisture {
             if (leg_sel[l] == 1) {    //  front left
                 front_left.setNewPosition(front_left_leg[0], front_left_leg[1], front_left_leg[2], front_left_leg[3], front_left_leg[4], front_left_leg[5]);
                 let array: number[] = [90, 90, 90];
-                if(InverseKinamaticModel() == 123456789 ){};
+                if(InverseKinamaticModel()){};
                 kinamaticOutput_front_left =
                     [
                         front_left.getServoCurrentAngles(),

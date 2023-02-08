@@ -36,9 +36,9 @@ namespace gatorMoisture {
     }
 
     //%
-    int InverseKinamaticModel()
+    bool InverseKinamaticModel()
     {
-        return 123456789;
+        return true;
     }
 }
 
