@@ -166,7 +166,11 @@ namespace gatorMoisture {
     export function moisture(pin: AnalogPin, type: gatorMoistureType): number {
         let ADCVal = pins.analogReadPin(pin)
         switch (type) {
-            case gatorMoistureType.moisture: return getMoisture(ADCVal)
+            case gatorMoistureType.moisture: 
+            {
+                    getMoisture(ADCVal)
+                return 123456789
+            }
             case gatorMoistureType.adcVal: return ADCVal
             default: return -11111111
         }
