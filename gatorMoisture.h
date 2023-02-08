@@ -8,7 +8,7 @@
 using namespace pxt;
 
 export namespace gatorMoisture {
-	void InverseKinamaticModel();
+	extern void InverseKinamaticModel();
 	//void InverseKinamaticModel(float* output_array, float x, float y, float z, float pitch, float roll, float yaw, int leg_ID);
 	float getMoisture(int16_t ADCVal);
 }
