@@ -166,11 +166,7 @@ namespace gatorMoisture {
     export function moisture(pin: AnalogPin, type: gatorMoistureType): number {
         let ADCVal = pins.analogReadPin(pin)
         switch (type) {
-            case gatorMoistureType.moisture: 
-            {
-                    getMoisture(ADCVal)
-                return 123456789
-            }
+            case gatorMoistureType.moisture: return getMoisture(ADCVal)
             case gatorMoistureType.adcVal: return ADCVal
             default: return -11111111
         }
@@ -198,7 +194,7 @@ namespace gatorMoisture {
             if (leg_sel[l] == 1) {    //  front left
                 front_left.setNewPosition(front_left_leg[0], front_left_leg[1], front_left_leg[2], front_left_leg[3], front_left_leg[4], front_left_leg[5]);
                 let array: number[] = [90, 90, 90];
-                if(InverseKinamaticModel()){};
+                if(InverseKinamaticModel() == 123456789 ){};
                 kinamaticOutput_front_left =
                     [
                         front_left.getServoCurrentAngles(),

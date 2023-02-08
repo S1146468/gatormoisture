@@ -31,14 +31,14 @@ namespace gatorMoisture {
     * Calculates the light in Lux based on the ADC value passed in. 1 step in adcVal is equal to .488 uA or .976 lux at 5V
     */
     //%
-    void getMoisture(int16_t ADCVal) {
-        //return ADCVal / 1023.0f;
+    int getMoisture(int16_t ADCVal) {
+        return 123456789;
     }
 
     //%
     int InverseKinamaticModel()
     {
-        return 0;
+        return 123456789;
     }
 }
 
