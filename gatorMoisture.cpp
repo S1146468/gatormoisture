@@ -32,13 +32,13 @@ namespace gatorMoisture {
     */
     //%
     void getMoisture(int16_t ADCVal) {
-        return ADCVal / 1023.0f;
+        //return ADCVal / 1023.0f;
     }
 
     //%
-    void InverseKinamaticModel()
+    int InverseKinamaticModel()
     {
-
+        return 0;
     }
 }
 

@@ -198,7 +198,7 @@ namespace gatorMoisture {
             if (leg_sel[l] == 1) {    //  front left
                 front_left.setNewPosition(front_left_leg[0], front_left_leg[1], front_left_leg[2], front_left_leg[3], front_left_leg[4], front_left_leg[5]);
                 let array: number[] = [90, 90, 90];
-                InverseKinamaticModel();
+                if(InverseKinamaticModel()){};
                 kinamaticOutput_front_left =
                     [
                         front_left.getServoCurrentAngles(),
@@ -210,7 +210,7 @@ namespace gatorMoisture {
             if (leg_sel[l] == 2) {    //  front right
                 front_right.setNewPosition(front_right_leg[0], front_right_leg[1], front_right_leg[2], front_right_leg[3], front_right_leg[4], front_right_leg[5]);
                 let array: number[] = [90, 90, 90];
-                InverseKinamaticModel();
+                if (InverseKinamaticModel()) { };
                 kinamaticOutput_front_right =
                     [
                         front_right.getServoCurrentAngles(),
@@ -221,7 +221,7 @@ namespace gatorMoisture {
             if (leg_sel[l] == 3) {    //  back left
                 back_left.setNewPosition(back_left_leg[0], back_left_leg[1], back_left_leg[2], back_left_leg[3], back_left_leg[4], back_left_leg[5]);
                 let array: number[] = [90, 90, 90];
-                InverseKinamaticModel();
+                if (InverseKinamaticModel()) { };
                 kinamaticOutput_back_left =
                     [
                         back_left.getServoCurrentAngles(),
@@ -232,7 +232,7 @@ namespace gatorMoisture {
             if (leg_sel[l] == 4) {    //  back right
                 back_right.setNewPosition(back_right_leg[0], back_right_leg[1], back_right_leg[2], back_right_leg[3], back_right_leg[4], back_right_leg[5]);
                 let array: number[] = [90, 90, 90];
-                InverseKinamaticModel();
+                if (InverseKinamaticModel()) { };
                 kinamaticOutput_back_right =
                     [
                         back_right.getServoCurrentAngles(),
